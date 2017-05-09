@@ -1,5 +1,7 @@
 
-# API Project: File Metadata Microservice for freeCodeCamp
+# API Project: File Metadata Microservice for FCC
+
+### Project URL https://big-pond.glitch.me/
 
 ###    User stories:
 1. I can submit a form that includes a file upload.
@@ -11,5 +13,3 @@
 
 ### Hint:
 * To handle the file uploading you should use the [multer](https://www.npmjs.com/package/multer) npm package.
-
-### Project URL https://big-pond.glitch.me/
