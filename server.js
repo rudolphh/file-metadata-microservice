@@ -10,10 +10,10 @@ var upload = multer();
 var app = express();
 
 app.use(cors());
-app.use('/public', express.static(process.cwd() + '/public'));
+app.use(express.static('public'));
 
 app.get('/', function (req, res) {
-     res.sendFile(process.cwd() + '/views/index.html');
+     res.sendFile(__dirname + '/views/index.html');
   });
 
 app.get('/hello', function(req, res){
@@ -34,6 +34,6 @@ app.post('/api/fileanalyse', upload.single('upfile'), function(req, res, next) {
 
 
 
-app.listen(process.env.PORT || 3000, function () {
-  console.log('Node.js listening ... on port ' + process.env.PORT);
-});
+const listener = app.listen(process.env.PORT || 3000, () => {
+  console.log('Your app is listening on port ' + listener.address().port)
+})
