@@ -1,5 +1,5 @@
 
-# API Project: File Metadata Microservice for FCC
+# API Project: File Metadata Microservice
 
 ### Project URL https://big-pond.glitch.me/
 
